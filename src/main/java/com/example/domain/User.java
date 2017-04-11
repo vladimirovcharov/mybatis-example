@@ -1,70 +1,49 @@
 package com.example.domain;
 
 public class User {
-    private Integer userId;
-    private String emailId;
-    private String password;
-    private String firstName;
-    private String lastName;
-    private Blog blog;
+    private Integer id;
+    private String name;
+    private String email;
 
-    public Integer getUserId() {
-        return userId;
+    public User() {
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public User(Integer id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
     }
 
-    public String getEmailId() {
-        return emailId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getPassword() {
-        return password;
+    public String getName() {
+        return name;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getEmail() {
+        return email;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public Blog getBlog() {
-        return blog;
-    }
-
-    public void setBlog(Blog blog) {
-        this.blog = blog;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId +
-                ", emailId='" + emailId + '\'' +
-                ", password='" + password + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", blog=" + blog +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }
